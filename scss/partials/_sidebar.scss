@@ -6,20 +6,58 @@
 /* 2.2 - Sidebar Right */
 
 .sidebar {
-	background: #ffffff;
-	border: 1px solid rgba(0, 0, 0, 0.125);
-	border-radius: 0.25rem;
+	background: #fbfbfb;
+	padding: 24px;
+	width: 100%;
+	border-radius: 4px;
+
+	@media screen and (min-width: 1200px) {
+		width: 30%;
+	}
+
 
 
 	ul {
 		list-style: none;
 	}
 
-	input[type=search] {
-		border: 1px solid rgba(0, 0, 0, 0.15);
-	}
+	.widget {
+		width: 100%;
+		margin-bottom: 30px;
+		color: #394753;
 
-	>* {
-		margin: 10px 0 15px;
+		.title-widget {
+			width: 100%;
+			height: 60px;
+			line-height: 30px;
+			margin-bottom: 30px;
+			font-size: 18px;
+		}
+
+		ul {
+			width: 100%;
+
+			li {
+				width: 100%;
+				margin-top: 15px;
+				list-style: none;
+
+				&.children li {
+					margin-left: 25px;
+				}
+
+				a {
+					line-height: 14px;
+					color: #394753;
+					text-decoration: none;
+					transition: all 0.3s;
+					word-break: break-all;
+
+					&:hover {
+						color: #276EB7;
+					}
+				}
+			}
+		}
 	}
 }

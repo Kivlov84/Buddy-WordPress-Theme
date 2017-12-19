@@ -2,65 +2,74 @@
  * Menus
  */
 
+
 nav {
 	margin: 0;
 	float: left;
 	width: 100%;
-
 	ul {
 		list-style: none;
-		margin: 0;
+		float: left;
+	}
 
-		li {
-			margin-right: 40px;
-			position: relative;
-			list-style: none;
-			float: left;
+	li {
+		padding: 15px 0 14px;
+		margin-right: 40px;
+		position: relative;
+		float: left;
 
-			&:first-child {
+		&:first-child {
+			margin-left: 0;
+		}
+
+		a {
+			padding: 5px 10px;
+			display: block;
+			color: #394753;
+			text-decoration: none;
+			border: 1px solid #f3f3f3;
+			&:hover {
+				border: 1px solid #dee0e2;
+			}
+		}
+		ul {
+			top: 55px;
+			display: none;
+			position: absolute;
+			background: #f3f3f3;
+			z-index: 99999;
+			width: 200px;
+		}
+		&:hover > ul {
+			display: block;
+		}
+		ul {
+			li {
+				padding: 5px;
+				width: 100%;
 				margin-left: 0;
-			}
-
-			a {
-				padding: 5px 10px;
-				display: block;
-				color: rgba(255, 255, 255, 0.5);
-				text-decoration: none;
-
-				&:hover {
-					color: rgba(255, 255, 255, 0.75);
-					text-decoration: none;
-				}
-
-			}
-			&:hover > ul {
-				display: block;
-			}
-			ul {
-				li {
-					padding: 5px;
-					width: 100%;
-					margin-left: 0;
-					a {
-						padding: 11px 10px;
-						width: 180px;
-						line-height: 18px;
-						font-weight: normal;
+				a {
+					padding: 11px 10px;
+					width: 180px;
+					line-height: 18px;
+					font-weight: normal;
+					border: none;
+					font-size: 14px;
+					float: left;
+					&:hover {
+						background: #dee0e2;
 						border: none;
-						font-size: 14px;
-						float: left;
-						color: #ffffff;
-
-						&:hover {
-							background: #dee0e2;
-							border: none;
-						}
 					}
 				}
 			}
-			&.current-menu-item a {
-				color: #ffffff;
+			ul {
+				background: #f3f3f3;
+				top: 0;
+				left: 100%;
 			}
+		}
+		&.current-menu-item a {
+			color: #394753;
 		}
 	}
 }

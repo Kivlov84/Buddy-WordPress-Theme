@@ -25,7 +25,6 @@ body {
 	min-height: 100%;
 	margin: 0;
 	font-family: $font-family-base;
-	background-color: #f5f8fa;
 }
 
 .clearfix {
@@ -37,22 +36,26 @@ body {
 	}
 }
 
-.site-main {
-	background: #ffffff;
-	border: 1px solid rgba(0, 0, 0, 0.125);
-	border-radius: 0.25rem;
+main {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
 
+	@media screen and (min-width: 1200px) {
+		flex-direction: row;
+		margin: 32px auto;
+		justify-content: space-between;
+	}
+}
+
+section {
+	width: 100%;
+
+	@media screen and (min-width: 1200px) {
+		width: 70%;
+	}
 }
 
 article {
 	padding:0 16px 0 0;
-}
-
-a {
-	text-decoration: none;
-	color: $link-color;
-
-	&:hover, &:focus {
-		text-decoration: underline;
-	}
 }

@@ -1,0 +1,58 @@
+/**
+ * General
+ */
+
+
+/*
+	Core
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	background: #fff;
+	height: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	min-height: 100%;
+	margin: 0;
+	font-family: $font-family-base;
+	background-color: #f5f8fa;
+}
+
+.clearfix {
+
+	&:after {
+		content: '';
+		clear: both;
+		display: table;
+	}
+}
+
+.site-main {
+	background: #ffffff;
+	border: 1px solid rgba(0, 0, 0, 0.125);
+	border-radius: 0.25rem;
+
+}
+
+article {
+	padding:0 16px 0 0;
+}
+
+a {
+	text-decoration: none;
+	color: $link-color;
+
+	&:hover, &:focus {
+		text-decoration: underline;
+	}
+}

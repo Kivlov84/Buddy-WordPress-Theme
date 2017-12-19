@@ -1,0 +1,25 @@
+/**
+ * Sidebar
+ */
+
+
+/* 2.2 - Sidebar Right */
+
+.sidebar {
+	background: #ffffff;
+	border: 1px solid rgba(0, 0, 0, 0.125);
+	border-radius: 0.25rem;
+
+
+	ul {
+		list-style: none;
+	}
+
+	input[type=search] {
+		border: 1px solid rgba(0, 0, 0, 0.15);
+	}
+
+	>* {
+		margin: 10px 0 15px;
+	}
+}

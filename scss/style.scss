@@ -1,0 +1,26 @@
+/*!
+  Theme Name: Buddy Theme
+  Description: Buddy Theme Guide
+  Version: 1.0.0
+  Author: Buddy Team
+  Tags: HTML5, CSS3
+*/
+
+// Modules
+@import "modules/variables";
+@import "modules/mixins";
+@import "modules/fonts";
+
+// Partials
+@import "partials/general";
+@import "partials/reset";
+@import "partials/wordpress";
+@import "partials/utils";
+@import "partials/wrapper";
+@import "partials/header";
+@import "partials/nav";
+@import "partials/sidebar";
+@import "partials/footer";
+@import "partials/print";
+@import "partials/comments";
+@import "partials/typography";

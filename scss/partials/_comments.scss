@@ -1,0 +1,85 @@
+
+.comment-posts {
+	list-style: none;
+	margin: 0 0 1em;
+	padding: 0;
+	text-indent: 0;
+	li {
+		&.alt, &.bypostauthor, &.byuser, &.comment-author-admin {}
+		&.comment {
+			border-bottom: 1px dotted #666;
+			padding: 1em;
+			div {
+				&.comment-author {}
+				&.vcard {
+					font: normal 16px $font-family-base,times,serif;
+					cite.fn {
+						font-style: normal;
+						a.url {}
+					}
+					img {
+						&.avatar {
+							border: 5px solid #ccc;
+							float: right;
+							margin: 0 0 1em 1em;
+						}
+						&.avatar-32, &.photo {}
+					}
+					span.says {}
+				}
+				&.comment-meta {
+					font-size: 9px;
+					a {
+						color: #ccc;
+					}
+				}
+			}
+			p {
+				font-size: 11px;
+				margin: 0 0 1em;
+			}
+			ul {
+				font-size: 11px;
+				list-style: square;
+				margin: 0 0 1em 2em;
+			}
+			div.reply {
+				font-size: 11px;
+				a {
+					font-weight: bold;
+				}
+			}
+			ul.children {
+				list-style: none;
+				margin: 1em 0 0;
+				text-indent: 0;
+				li {
+					&.alt, &.bypostauthor, &.byuser, &.comment, &.comment-author-admin {}
+					&.depth-2 {
+						border-left: 5px solid #555;
+						margin: 0 0 .25em .25em;
+					}
+					&.depth-3 {
+						border-left: 5px solid #999;
+						margin: 0 0 .25em .25em;
+					}
+					&.depth-4 {
+						border-left: 5px solid #bbb;
+						margin: 0 0 .25em .25em;
+					}
+					&.depth-5, &.odd {}
+				}
+			}
+		}
+		&.even {
+			background: #fff;
+		}
+		&.odd {
+			background: #f6f6f6;
+		}
+		&.parent {
+			border-left: 5px solid #111;
+		}
+		&.thread-alt, &.thread-even, &.thread-odd {}
+	}
+}
